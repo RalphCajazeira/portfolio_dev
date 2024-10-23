@@ -1,10 +1,18 @@
 header {
   display: flex;
-  background-image: url(/assets/image/Background_Intro.png);
+  justify-content: center;
+  align-items: center;
+  background-image: url('/assets/image/Background_Intro.png');
   background-size: cover;
   height: 750px;
+  width: 100%;
   max-width: 1366px;
-  justify-content: center;
+  margin: 0 auto;
+}
+
+header .content {
+  width: 100%;
+  max-width: 1366px;
 }
 
 #profile {
@@ -13,13 +21,13 @@ header {
   justify-content: center;
   align-items: center;
   margin: 120px 163px 183px;
+}
 
-  img {
-    padding: 8px;
-    width: 112px;
-    height: 112px;
-    object-fit: cover;
-  }
+#profile img { /* Movido para fora de #profile */
+  padding: 8px;
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
 }
 
 .title-profile {
