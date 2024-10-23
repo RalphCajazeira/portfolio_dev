@@ -21,3 +21,9 @@ header {
     object-fit: cover;
   }
 }
+
+.title-profile {
+  display: flex;
+  flex-direction: column;
+  margin-block: 80px;
+}
