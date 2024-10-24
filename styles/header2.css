@@ -1,0 +1,110 @@
+/* Estrutura da seção hero */
+.hero {
+  text-align: center;
+  padding: 50px 0;
+  background-color: var(--base-color-gray-200); /* Cor de fundo do herói */
+}
+
+.profile img {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  border: 4px solid var(--bg-color-purple); /* Borda colorida ao redor da imagem */
+  object-fit: cover;
+}
+
+.hero-text .intro {
+  font-size: var(--text-title-sm);
+  color: var(--base-color-gray-600);
+}
+
+.hero-text .highlight {
+  color: var(--bg-color-red); /* Destaque no nome */
+}
+
+.hero-text .title {
+  font-size: var(--text-title-lg);
+  color: var(--base-color-gray-600);
+  margin: 10px 0;
+}
+
+.hero-text .description {
+  font-size: var(--text-md);
+  color: var(--base-color-gray-500);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.tech-icons a {
+  margin: 0 10px;
+}
+
+.tech-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.scroll-down {
+  margin-top: 20px;
+}
+
+.scroll-down span {
+  font-size: 30px;
+  color: var(--base-color-gray-500);
+}
+
+/* Container geral dos ícones */
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* Espaçamento entre os botões */
+  flex-wrap: wrap; /* Para os botões se adaptarem em telas menores */
+  margin-top: 20px;
+}
+
+/* Estilos dos botões */
+.tech-icon {
+  display: flex;
+  align-items: center;
+  background-color: var(--base-color-gray-300); /* Cor de fundo dos botões */
+  padding: 8px 16px;
+  border-radius: 20px; /* Deixa os cantos arredondados */
+  color: var(--base-color-gray-600);
+  transition: background-color 0.3s ease;
+}
+
+.tech-icon img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+.tech-icon span {
+  font-size: 16px;
+}
+
+/* Efeito ao passar o mouse */
+.tech-icon:hover {
+  background-color: var(--bg-color-blue); /* Cor de destaque ao hover */
+}
+
+/* Responsividade: Ajuste para telas menores */
+@media (max-width: 768px) {
+  .tech-icons {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .tech-icon {
+    padding: 8px 12px;
+  }
+
+  .tech-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .tech-icon span {
+    font-size: 14px;
+  }
+}

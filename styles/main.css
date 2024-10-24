@@ -1,0 +1,30 @@
+.projects-section {
+  background-color: var(--base-color-gray-200);
+  padding-inline: 164px;
+  gap: 56px;
+}
+
+.section-header {
+  p {
+    font: var(--text-subtitle);
+    color: var(--bg-color-red);
+  }
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 280px;
+  background-color: var(--base-color-gray-300);
+  padding: 12px;
+  border-radius: 12px;
+  gap: 20px;
+
+  img {
+    border-radius: 8px;
+  }
+}
+
+.card-desc {
+  gap: 8px;
+}

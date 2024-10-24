@@ -9,7 +9,8 @@
   --bg-color-red: #e3646e;
   --bg-color-purple: #bb72e9;
   --bg-color-blue: #3996db;
-  --bg-color-gree: #82bc4f;
+  --bg-color-green: #82bc4f;
+  --bg-color-white: #ffffff;
   --bg-color-yellow: #eabd5f;
 
   --base-color-gray-100: #0d0e11;
@@ -25,25 +26,26 @@
   --font-family-Asap: "Asap", serif;
 
   --text-title-lg: bold 56px/120% var(--font-family-Asap);
-  --text-title-md: bold 56px/120% var(--font-family-Asap);
-  --text-title-sm: bold 56px/120% var(--font-family-Asap);
-  --text-subtitle: bold 56px/120% var(--font-family-Asap);
-  --text-md: bold 56px/120% var(--font-family-Asap);
-  --text-sm: bold 56px/120% var(--font-family-Asap);
+  --text-title-md: bold 24px/120% var(--font-family-Asap);
+  --text-title-sm: bold 16px/120% var(--font-family-Asap);
+  --text-subtitle: 400 20px/120% var(--font-family-Inconsolata);
+  --text-md: 400 16px/140% var(--font-family-Maven);
+  --text-sm: 400 14px/140% var(--font-family-Maven);
 }
 
-/* Parametro do Body */
 body {
-  font: var(--font-family-Asap);
   color: var(--base-color-gray-600);
-  /* background-color: var(--base-color-gray-300); */
 }
 
-.flex-col {
-  display: flex;
-  flex-direction: column;
+a {
+  text-decoration: none;
 }
 
-.border-teste {
-  border: solid 5px red;
+.bordas {
+  border: 2px solid red;
+  background-color: #ff00001a; /* Cor de fundo semi-transparente para visualizar o espaço */
+}
+
+h2 {
+  font: var(--text-title-md);
 }

@@ -1,0 +1,110 @@
+/* 
+  Classe container centraliza o conteúdo da página. 
+  Usa uma largura máxima de 1200px e garante que o conteúdo 
+  tenha padding lateral para não ficar encostado nas bordas.
+*/
+.container {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+/* 
+  Flexbox básico. Usado para ativar o layout em flex, onde os itens 
+  dentro desse container serão organizados automaticamente em linha 
+  (row) ou coluna (column), dependendo de outras classes adicionais. 
+*/
+.flex {
+  display: flex;
+}
+
+/* 
+  Centraliza itens dentro de um container flex, tanto horizontalmente 
+  (justify-content: center) quanto verticalmente (align-items: center). 
+  Útil para centralizar conteúdo em seções como header ou cards.
+*/
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+  Alinha os itens de um container em uma coluna vertical (flex-direction: column). 
+  Útil quando você precisa que os itens fiquem empilhados verticalmente, 
+  como em listas ou seções de contato.
+*/
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+  Adiciona espaçamento entre os itens dentro de um container flex ou grid. 
+  'gap-1' adiciona 8px de espaço, 'gap-2' adiciona 16px e 'gap-3' 24px. 
+  Facilita a criação de espaços entre botões, cards ou qualquer grupo de elementos.
+*/
+.gap-1 {
+  gap: 8px;
+}
+.gap-2 {
+  gap: 16px;
+}
+.gap-3 {
+  gap: 24px;
+}
+
+/* 
+  Centraliza o texto dentro de um elemento. 
+  Útil para títulos ou parágrafos em seções onde o alinhamento centralizado é importante.
+*/
+.text-center {
+  text-align: center;
+}
+
+/* 
+  Classes de padding (espaçamento interno). 
+  'p-1' adiciona 8px de padding interno em todos os lados do elemento. 
+  'p-2' adiciona 16px e 'p-3' adiciona 24px.
+*/
+.p-1 {
+  padding: 8px;
+}
+.p-2 {
+  padding: 16px;
+}
+.p-3 {
+  padding: 24px;
+}
+
+/* 
+  Classes de margin (espaçamento externo). 
+  'm-1' adiciona 8px de margem externa em todos os lados do elemento. 
+  'm-2' adiciona 16px e 'm-3' adiciona 24px.
+*/
+.m-1 {
+  margin: 8px;
+}
+.m-2 {
+  margin: 16px;
+}
+.m-3 {
+  margin: 24px;
+}
+
+/* 
+  Adiciona bordas arredondadas aos elementos. 
+  Útil para botões, cartões (cards) e outras áreas onde o design precisa de suavidade nas bordas.
+*/
+.border-rounded {
+  border-radius: 8px;
+}
+
+/* 
+  Define a largura do elemento como 100% do espaço disponível. 
+  Muito útil em layouts responsivos, onde você quer que o elemento 
+  ocupe toda a largura da tela em dispositivos menores.
+*/
+.w-full {
+  width: 100%;
+}

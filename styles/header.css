@@ -1,37 +1,130 @@
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('/assets/image/Background_Intro.png');
-  background-size: cover;
+  width: 1366px;
   height: 750px;
-  width: 100%;
-  max-width: 1366px;
+  background-image: url(/assets/image/Background_Intro.png);
+  background-size: cover;
+  background-position: center;
+  padding: 120px 163px 183px;
   margin: 0 auto;
 }
 
-header .content {
-  width: 100%;
-  max-width: 1366px;
+.header-content {
+  display: flex;
+  text-align: center;
+  margin: 0 180px;
+  max-width: 100%; /* Garante que ele não vá além do limite da tela */
 }
 
-#profile {
+.header-primary {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  row-gap: 80px;
+}
+
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.image-box {
+  position: relative;
+  width: 112px; /* Ajuste conforme necessário */
+  aspect-ratio: 1/1;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 120px 163px 183px;
+  margin: 0 auto;
+  padding: 5px;
+
+  .img-central {
+    width: 100%; /* A imagem se ajusta para ocupar todo o espaço disponível */
+    height: 100%; /* Opcional: ajusta a altura para preencher o contêiner */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+  }
+  .img-corner {
+    position: absolute;
+    bottom: 2px; /* Posiciona no fundo da caixa */
+    right: 2px; /* Alinha à direita da caixa */
+    width: 32px; /* Tamanho fixo da imagem, ajuste conforme necessário */
+    height: 32px; /* Tamanho fixo da imagem */
+    padding: 2.5px 0.5px;
+  }
 }
 
-#profile img { /* Movido para fora de #profile */
-  padding: 8px;
-  width: 112px;
-  height: 112px;
-  object-fit: cover;
+.prof-desc-box {
+  gap: 20px;
+
+  h3 {
+    font: var(--text-subtitle);
+    span {
+      color: var(--bg-color-red);
+    }
+  }
+  h1 {
+    font: var(--text-title-lg);
+    color: var(--base-color-gray-600);
+  }
+
+  p {
+    font: var(--text-sm);
+    color: var(--base-color-gray-400);
+  }
 }
 
-.title-profile {
+/* Menu das Tecnologias */
+.tech-buttons-box {
+  gap: 16px;
+  margin: 0 auto;
+}
+
+.tech-icon {
   display: flex;
-  flex-direction: column;
-  margin-block: 80px;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: var(--base-color-gray-300);
+  font: var(--text-md);
+  color: var(--base-color-gray-500);
+}
+
+/* Controle de cores dinâmicas com variáveis CSS usando mascara*/
+.icon {
+  width: 32px;
+  height: 32px;
+  background-color: white; /* A cor será alterada para cada ícone */
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  display: inline-block;
+}
+
+.github-icon {
+  mask: url(/assets/ico/GitHub.svg) no-repeat center;
+  background-color: var(--base-color-gray-500);
+}
+
+.html-icon {
+  mask: url(/assets/ico/HTML.svg) no-repeat center;
+  background-color: var(--bg-color-red);
+}
+
+.css-icon {
+  mask: url(/assets/ico/CSS.svg) no-repeat center;
+  background-color: var(--bg-color-blue);
+}
+
+.javascript-icon {
+  mask: url(/assets/ico/JavaScript.svg) no-repeat center;
+  background-color: var(--bg-color-yellow);
+}
+
+.react-icon {
+  mask: url(/assets/ico/React.svg) no-repeat center;
+  background-color: var(--bg-color-blue);
+}
+
+.node-icon {
+  mask: url(/assets/ico/Node.js.svg) no-repeat center;
+  background-color: var(--bg-color-green);
 }
