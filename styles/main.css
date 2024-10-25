@@ -1,7 +1,14 @@
+main {
+  width: 1366px;
+  margin: 0 auto;
+}
+
 .projects-section {
   background-color: var(--base-color-gray-200);
   padding-inline: 164px;
   gap: 56px;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .section-header {
@@ -10,15 +17,22 @@
     color: var(--bg-color-red);
   }
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
   width: 330px;
   height: 280px;
   background-color: var(--base-color-gray-300);
-  padding: 12px;
+  padding: 12px 12px 17px;
   border-radius: 12px;
-  gap: 20px;
+  justify-content: space-between;
 
   img {
     border-radius: 8px;
@@ -27,4 +41,14 @@
 
 .card-desc {
   gap: 8px;
+
+  h3 {
+    font: var(--text-title-sm);
+    color: var(--base-color-gray-600);
+  }
+
+  p {
+    font: var(--text-sm);
+    color: var(--base-color-gray-500);
+  }
 }
